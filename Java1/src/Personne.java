@@ -4,12 +4,11 @@ public abstract class Personne {
     protected String prenom;
     protected int id;
 
-    public  personne(String nom, String prenom, int id){
+
+    public Personne(String nom, String prenom, int id){
         this.nom = nom;
         this.prenom = prenom;
         this.id = id;
-
-        return;
     }
 
 
