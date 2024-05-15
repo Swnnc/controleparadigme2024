@@ -4,30 +4,17 @@ public class Livre implements Empruntable{
     protected String isbn;
     protected boolean disponible;
 
-    public String getTitre() {
-        return titre;
-    }
-
-    public void setTitre(String titre) {
+    public Livre(String titre, String auteur, String isbn, boolean disponible){
         this.titre = titre;
-    }
-
-    public String getAuteur() {
-        return auteur;
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public boolean isDisponible() {
-        return disponible;
+        this.auteur = auteur;
+        this.isbn = isbn;
+        this.disponible = disponible;
     }
     public void afficheDetails(){
         System.out.println("Titre : "+ this.titre);
         System.out.println("Auteur :"+ this.auteur);
         System.out.println("isbn :"+ this.isbn);
-        System.out.println("Disponibilité"+ this.disponible);
+        System.out.println("Disponibilité :"+ this.disponible);
     }
 
     public void emprunter(String isbn) {
