@@ -5,8 +5,10 @@ public class Membre extends Personne{
     protected String statut;
     protected Date dateAdhesion;
 
-    public Membre(String nom, String prenom, int id) {
+    public Membre(String nom, String prenom, int id, String statut, Date dateAdhesion) {
         super(nom, prenom, id);
+        this.statut = statut;
+        this.dateAdhesion = dateAdhesion;
     }
 
     public void afficherDetails() {
