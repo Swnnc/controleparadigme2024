@@ -1,4 +1,4 @@
-public class Livre {
+public class Livre implements Empruntable{
     protected String titre;
     protected String auteur;
     protected String isbn;
@@ -30,4 +30,11 @@ public class Livre {
         System.out.println("Disponibilité"+ this.disponible);
     }
 
+    public void emprunter(String isbn) {
+
+    }
+
+    public void retourner(String isbn) {
+
+    }
 }
